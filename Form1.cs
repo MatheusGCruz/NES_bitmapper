@@ -87,11 +87,7 @@ namespace NES_bitmapper
         }
 
 
-        private void bit00_Click(object sender, EventArgs e)
-        {
-            bit00_value = btnClickExecute(bit00_value);
-            setBitColor(bit00_value, bit00);
-        }
+
 
 
         private int btnClickExecute(int currentBit)
@@ -140,9 +136,87 @@ namespace NES_bitmapper
 
             }
         }
-                
+
+        // Generate HEX value
+        private string hexFirstValue(
+            int bit3,
+            int bit2, 
+            int bit1, 
+            int bit0
+            )
+        {
+            string returnString = "0";
+            int intValue = 0;
+
+            intValue += 8 * isFirstBitSetted(bit3);
+            intValue += 4 * isFirstBitSetted(bit2);
+            intValue += 2 * isFirstBitSetted(bit1);
+            intValue += 1 * isFirstBitSetted(bit0);
 
 
+            switch (intValue)
+            {
+                case 10: returnString = "A";break;
+                case 11: returnString = "B"; break;
+                case 12: returnString = "C"; break;
+                case 13: returnString = "D"; break;
+                case 14: returnString = "E"; break;
+                case 15: returnString = "F"; break;
+                default:
+                    returnString = intValue.ToString();
+                    break;
+            }
+
+            return returnString;
+        }
+
+        private int isFirstBitSetted(int value)
+        {
+            int returnValue = 0;
+            if(value == 3 ||  value == 2)
+            {
+                returnValue = 1;
+            }
+            return returnValue;
+        }
+
+        private int isSecondBitSetted(int value)
+        {
+            int returnValue = 0;
+            if (value == 3 || value == 1)
+            {
+                returnValue = 1;
+            }
+            return returnValue;
+        }
+
+
+
+
+
+        private void getFirstByte()
+        {
+            firstByteTextbox.Text = hexFirstValue(0, 1, 2, 3);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bit00_Click(object sender, EventArgs e)
+        {
+            bit00_value = btnClickExecute(bit00_value);
+            setBitColor(bit00_value, bit00);
+            getFirstByte();
+        }
+
+        private void bit01_Click(object sender, EventArgs e)
+        {
+            bit01_value = btnClickExecute(bit01_value);
+            setBitColor(bit00_value, bit00);
+            getFirstByte();
+        }
 
 
     }

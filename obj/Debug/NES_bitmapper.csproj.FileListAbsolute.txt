@@ -9,3 +9,14 @@ C:\Projects\Games\NES\NESAssembly\NES_bitmapper\obj\Debug\NES_bitmapper.csproj.G
 C:\Projects\Games\NES\NESAssembly\NES_bitmapper\obj\Debug\NES_bitmapper.csproj.CoreCompileInputs.cache
 C:\Projects\Games\NES\NESAssembly\NES_bitmapper\obj\Debug\NES_bitmapper.exe
 C:\Projects\Games\NES\NESAssembly\NES_bitmapper\obj\Debug\NES_bitmapper.pdb
+C:\Projects\Games\NES\NES_bitmapper\bin\Debug\NES_bitmapper.exe.config
+C:\Projects\Games\NES\NES_bitmapper\bin\Debug\NES_bitmapper.exe
+C:\Projects\Games\NES\NES_bitmapper\bin\Debug\NES_bitmapper.pdb
+C:\Projects\Games\NES\NES_bitmapper\obj\Debug\NES_bitmapper.csproj.AssemblyReference.cache
+C:\Projects\Games\NES\NES_bitmapper\obj\Debug\NES_bitmapper.csproj.SuggestedBindingRedirects.cache
+C:\Projects\Games\NES\NES_bitmapper\obj\Debug\NES_bitmapper.Form1.resources
+C:\Projects\Games\NES\NES_bitmapper\obj\Debug\NES_bitmapper.Properties.Resources.resources
+C:\Projects\Games\NES\NES_bitmapper\obj\Debug\NES_bitmapper.csproj.GenerateResource.cache
+C:\Projects\Games\NES\NES_bitmapper\obj\Debug\NES_bitmapper.csproj.CoreCompileInputs.cache
+C:\Projects\Games\NES\NES_bitmapper\obj\Debug\NES_bitmapper.exe
+C:\Projects\Games\NES\NES_bitmapper\obj\Debug\NES_bitmapper.pdb
